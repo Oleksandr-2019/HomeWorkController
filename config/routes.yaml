@@ -1,0 +1,26 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+
+# config/routes.yaml
+
+# the "app_lucky_number" route name is not important yet
+app_lucky_number:
+  path: /lucky/number
+  controller: App\Controller\LuckyController::index
+
+
+
+
+
+
+
+
+# РЕЗЕРВНА КОПІЯ
+# the "app_lucky_number" route name is not important yet
+#*app_lucky_number:
+#  path: /welcome/happynumber
+#  controller: App\Controller\LuckyController::happynumber
+
+
