@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class WelcomeController extends AbstractController
 {
+
     /**
      * @Route("/welcome/happynumber")
      */

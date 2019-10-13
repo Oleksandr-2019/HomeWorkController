@@ -8,12 +8,10 @@ use Symfony\Component\HttpFoundation\Response;
 
 class TestParametrsController extends AbstractController
 {
-    // ...
 
     /**
      * @Route("/blog/{page}", name="Number Name my custom TestParametrsController route", requirements={"page"="\d+"})
      */
-
     public function list(int $page=1)
     {
         return new Response ('<html><body>Це нумерована адрема сторінки</body></html>');
