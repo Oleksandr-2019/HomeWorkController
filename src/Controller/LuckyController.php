@@ -7,10 +7,19 @@ use Symfony\Component\Serializer\SerializerInterface;
 
 class LuckyController
 {
-
-    public function index(SerializerInterface $serializer)
+    public function number()
     {
-        // keep reading for usage examples
+        $number = random_int(0, 100);
+
+
+        return new Response(
+            '<html><body>Lucky happy number: '.$number.'</body></html>'
+
+        );
+
+
+
     }
+
 
 }
