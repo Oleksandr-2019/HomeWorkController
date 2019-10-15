@@ -14,15 +14,22 @@ class TestParametrsController extends AbstractController
      */
     public function list(int $page=1)
     {
-        return new Response ('<html><body>Це нумерована адрема сторінки</body></html>');
+        $statementFact = 'Це нумерована адрема сторінки';
+        return $this->render('TestParametrs/TestParametrs.html.twig', [
+            'statementFact' => $statementFact,
+            'slug' => false
+        ]);
     }
 
     /**
-     * @Route("/blog/{slug}", name="Text Name my custom TestParametrsController route")
+     * @Route("/blog/{slug}", name="text_name_url")
      */
     public function show($slug)
     {
-        echo gettype($slug);
-        return new Response ('<html><body>Це текстова адреса сторінки'.$slug.'</body></html>');
+        $statementFact = 'Це текстова адреса сторінки';
+        return $this->render('TestParametrs/TestParametrs.html.twig', [
+            'statementFact' => $statementFact,
+            'slug' => $slug
+        ]);
     }
 }
