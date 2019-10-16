@@ -1,11 +1,11 @@
 <p>{{ statementFact }}
     {% if slug %}
         {{ slug }}
+    <div>
+        <a href="{{ path('text_name_url', {slug: slug}) }}">Рекомендоване задання відносних ссилок</a>
+    </div>
+    <div>
+        <a href="{{ url('text_name_url', {slug: slug}) }}">Рекомендоване задання абсолютних ссилок</a>
+    </div>
     {% endif %}
 </p>
-<div>
-    <a href="{{ path('text_name_url', {slug: slug}) }}">Рекомендоване задання відносних ссилок</a>
-</div>
-<div>
-    <a href="{{ path('text_name_url', {slug: slug}) }}">Рекомендоване задання абсолютних ссилок</a>
-</div>

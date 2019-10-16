@@ -12,7 +12,6 @@ class MyContaktsController
     {
         return new Response(
             '<html><body>Це тестова сторінка виведення контенту з допомогою роута PHP</body></html>'
-//http://homework3.local/api/posts/1
         );
     }
 }

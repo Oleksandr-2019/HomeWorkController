@@ -37,22 +37,3 @@ class TestResponseJsonController extends AbstractController
     }
 }
 
-
-/*
-class TestResponseJsonController
-{
-
-
-    public function index(){
-        $vid = array('username' => 'jane.doe');
-        $vidresp = $this->json($vid);
-     //   return $this->json(array('username' => 'jane.doe'));
-        //$d = array('foo' => 'bar', 'baz' => 'long');
-        //echo json_encode($d);
-
-        return $this->render( $vidresp );
-
-    }
-
-};
-
